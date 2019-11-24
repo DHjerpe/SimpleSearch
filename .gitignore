@@ -1,2 +1,21 @@
+# General 
 *.class
+
+#Intelij
 *.log
+*.ipr
+*.iml
+*.iws
+.idea
+
+#Other stuff
+*.cache
+*.cache-main
+*.history
+*.scala_dependencies
+
+# sbt
+bin/
+project/
+target/
+build/
