@@ -19,7 +19,7 @@ object Program {
 
   case class Index(m: Map[String, Array[String]]) {
     def rank(searchString: String): Map[String, Double] = {
-    val tmp = searchString.toLowerCase.split("(?U)\\W")
+    val tmp = searchString.toLowerCase.split("(?U)\\W").distinct
     for ((k,v) <- m) yield (k, tmp.intersect(v).length.toDouble / tmp.size )
     }
     override def toString: String = m.mkString(" ")
