@@ -1,5 +1,5 @@
 # Simple Search
-The 'Simple Search' ranks how well a set of words are represented in text files given a certain folder. The Application is intended to be used with .txt files formatted in Unicode (UTF-8). The ranking is given by the ammount of words in the search string that are present in the text file 
+This application enables the user to perform interactive searches of all text files located in a specified directory. The user is prompted to give a search string containing words, whereupon each text file within the folder and its corresponding rank will be printed. The rank is calculated by the intersection between words in the text file and the search string. Only files with a rank greater than zero will be printed (maximum 10). 
 
 ## Requirements
 In order to build and run the application, you need to:
@@ -14,9 +14,7 @@ sbt
 > runMain test.SimpleSearch directoryContainingTextFiles
 ```
 
-After this, the user is prompted to give a search string containing words. After doing so, each file with its corresponding rank will be printed (if the rank is greater than zero). At maximum, the rank of ten files will be printed.  
-
-An example session is given below: 
+For example, a session may look like the example given below: 
 
 ```
 sbt
